@@ -20,7 +20,6 @@ router.get('/weather/:city', async (req: Request, res: Response) => {
     try {
       const weatherData = await axios.get(apiUrl)
       res.status(200).json(weatherData.data);
-      console.log(weatherData);
 
       setWeatherData(city, JSON.stringify(weatherData.data), 6000)
     }
