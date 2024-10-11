@@ -23,6 +23,7 @@ The purpose of this project is to:
 ### Why Caching?
 
 Third-party APIs often come with rate limits, and making frequent requests can result in blocked access. To avoid excessive API calls and reduce response time, we cache weather data for a specified time (e.g., 1 hour) using Redis. If the requested data is already cached, it will be served from the cache, improving the API's efficiency.
+![Caching concept](https://assets.roadmap.sh/guest/weather-api-f8i1q.png)
 
 ## Technologies Used
 
@@ -112,3 +113,5 @@ During the implementation, I encountered the infamous "Cannot set headers after 
 
 ##### 4. API Rate Limits:
 To avoid hitting the rate limits of the weather API, I implemented caching with Redis to store the weather data for a specified period, reducing the number of redundant requests to the external API.
+
+[View the project on GitHub](https://github.com/Goutam-04/weather-backend-api)
